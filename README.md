@@ -1,3 +1,9 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./others/logo.jpeg">
+  <source media="(prefers-color-scheme: light)" srcset="./others/logo.jpeg">
+  <img src="./others/logo.jpeg" width="50%">
+</picture>
+
 # 🔐 Zapisec Web Application Firewall Security Platform Community
 
 Welcome to the official GitHub community for **Zapisec** – an enterprise-grade, SaaS-based Web Application Firewall (WAF) and DNS management platform designed to secure your digital infrastructure against a wide spectrum of modern web threats. Whether you're a developer, security engineer, system admin, or DevOps specialist, this space is for you.
@@ -20,6 +26,12 @@ Zapisec empowers you with full control over your application traffic and attack 
 - **Custom Rules**: Define and deploy domain-specific security rules using various attributes (IP, country, path, method, etc.).
 - **Managed Rules**: Predefined set of 48 WAF rules to block common attack vectors, with an option to extend and tailor to your needs.
 - **Rate Limiting**: Throttle incoming requests based on thresholds to mitigate brute-force, scraping, or abuse attempts per domain.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./others/application_firewall.png">
+  <source media="(prefers-color-scheme: light)" srcset="./others/application_firewall.png">
+  <img src="./others/application_firewall.png" width="100%">
+</picture>
 
 ### 2. 🤖 Bot Protection
 - **Good Bots**: Automatically allows verified bots from search engines (Google, Bing), social networks (X, Facebook), and cloud providers (AWS, Azure).
