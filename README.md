@@ -68,7 +68,6 @@ Zapisec empowers you with full control over your application traffic and attack 
 ## 🧩 Access Rights
 - <a href="https://zapisec.ai/pricing/" target="_blank">Basic Plan</a>
   - Only application firewall access with limited manaed rules. 
-  - ASN (Autonomous System Number)
 - <a href="https://zapisec.ai/pricing/" target="_blank">Premium Plan</a>
   - Application firewall access. 
   - Bot protection access
