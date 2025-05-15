@@ -6,7 +6,8 @@
 
 # 🔐 Zapisec Web Application Firewall Security Platform Community
 
-Welcome to the official GitHub community for **Zapisec** – an enterprise-grade, SaaS-based Web Application Firewall (WAF) and DNS management platform designed to secure your digital infrastructure against a wide spectrum of modern web threats. Whether you're a developer, security engineer, system admin, or DevOps specialist, this space is for you.
+Welcome to the official GitHub community for <a href="https://zapisec.io" target="_blank">**Zapisec**e</a>
+ – an enterprise-grade, SaaS-based Web Application Firewall (WAF) and DNS management platform designed to secure your digital infrastructure against a wide spectrum of modern web threats. Whether you're a developer, security engineer, system admin, or DevOps specialist, this space is for you.
 
 Here, you’ll find technical documentation, feature guides, support resources, a collaborative discussion forum, and a contribution gateway where the community can engage with the platform’s roadmap and evolution.
 
