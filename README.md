@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./others/logo.jpeg">
-  <source media="(prefers-color-scheme: light)" srcset="./others/logo.jpeg">
-  <img src="./others/logo.jpeg" width="50%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://zapisec.ai/wp-content/uploads/2023/09/Logo-ZAPISEC-removebg-preview-e1743969524490.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://zapisec.ai/wp-content/uploads/2023/09/Logo-ZAPISEC-removebg-preview-e1743969524490.png">
+  <img src="https://zapisec.ai/wp-content/uploads/2023/09/Logo-ZAPISEC-removebg-preview-e1743969524490.png">
 </picture>
 
 # 🔐 Zapisec Web Application Firewall Security Platform Community
