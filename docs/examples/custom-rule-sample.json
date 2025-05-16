@@ -1,0 +1,64 @@
+{
+    "ruleName": "New_Rules",
+    "conditions": [
+        {
+            "field": "URI_PATH",
+            "operator": "equal",
+            "value": "http://example.com/",
+            "logic": "OR",
+            "parent": 0
+        },
+        {
+            "field": "URI_QUERY_STRING",
+            "operator": "equal",
+            "value": "?test=testparams",
+            "logic": "AND",
+            "parent": 0
+        },
+        {
+            "field": "URI_QUERY_STRING",
+            "operator": "equal",
+            "value": "?test2=testparams",
+            "logic": "AND",
+            "parent": 0
+        },
+        {
+            "field": "URI_QUERY_STRING",
+            "operator": "equal",
+            "value": "?test3=testparams",
+            "logic": "AND",
+            "parent": 0
+        },
+        {
+            "field": "URI_PATH",
+            "operator": "equal",
+            "value": "http://example2.com/",
+            "logic": "OR",
+            "parent": 4
+        },
+        {
+            "field": "URI_QUERY_STRING",
+            "operator": "equal",
+            "value": "?gym=testparams",
+            "logic": "AND",
+            "parent": 4
+        },
+        {
+            "field": "URI_QUERY_STRING",
+            "operator": "equal",
+            "value": "?gym2=testparams",
+            "logic": "AND",
+            "parent": 4
+        },
+        {
+            "field": "URI_PATH",
+            "operator": "equal",
+            "value": "http://example3.com/",
+            "logic": "OR",
+            "parent": 7
+        }
+    ],
+    "action": "Block",
+    "place": "First",
+    "domainId": "678f3223b1f93b857833e427"
+}

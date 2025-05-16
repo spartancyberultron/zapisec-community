@@ -1,0 +1,10 @@
+{
+    "domain": "example.com",
+    "match": {
+      "country": "RU",
+      "method": "POST",
+      "path": "/auth"
+    },
+    "action": "challenge",
+    "description": "Challenge Russian POSTs to /auth"
+  }

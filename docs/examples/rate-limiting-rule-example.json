@@ -1,0 +1,24 @@
+{
+    "ruleName": "Test",
+    "conditions": [
+        {
+            "field": "IP",
+            "operator": "equal",
+            "value": "164.92.34.80",
+            "logic": "OR",
+            "parent": 0
+        },
+        {
+            "field": "Country",
+            "operator": "equal",
+            "value": "India",
+            "logic": "AND",
+            "parent": 0
+        }
+    ],
+    "action": "Allow",
+    "place": "First",
+    "requests": "100_REQUESTS", 
+    "period" : "10_MINUTES",
+    "domainId": "678f3223b1f93b857833e427"
+}
