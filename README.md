@@ -97,6 +97,61 @@ With a central dashboard that integrates all features, ZAPISEC simplifies the ma
 - Manage DNS and firewall rules for multi-domain infrastructure
 
 ---
+# ZAPISEC - Application Firewall Rules Matrix
+
+Below is a comprehensive comparison of feature availability across different ZAPISEC editions.
+
+| Firewall Rule Group                                                                 | Community | Basic | Premium | Enterprise |
+|--------------------------------------------------------------------------------------|:---------:|:-----:|:-------:|:----------:|
+| Core Fraud Prevention Framework for Account Creation                                 | ✅        | ✅    | ✅      | ✅         |
+| Bot Detection & Blocking Core Rules                                                  | ✅        | ✅    | ✅      | ✅         |
+| Account Take Over Prevention Core Rule                                               | ✅        | ✅    | ✅      | ✅         |
+| Common Weak Enumeration & CVE Prevention Core Rule Group                             | ✅        | ✅    | ✅      | ✅         |
+| Admin Protection Managed Prevention Core Rule Group                                  | ✅        | ✅    | ✅      | ✅         |
+| Known Bad Inputs Managed Prevention Core Rule Group                                  | ✅        | ✅    | ✅      | ✅         |
+| Linux/Unix Operation Systems Managed Prevention Core Rule Group                      | ✅        | ✅    | ✅      | ✅         |
+| Windows Operation Systems Managed Prevention Core Rule Group                         | ✅        | ✅    | ✅      | ✅         |
+| IP Reputation/Malicious IP’s Managed Prevention Core Rule Group                      | ✅        | ✅    | ✅      | ✅         |
+| Sensitive Files and Folders Managed Prevention Core Rule Group                       | ✅        | ✅    | ✅      | ✅         |
+| Outdated Browsers Managed Prevention Core Rule Group                                 | ❌        | ✅    | ✅      | ✅         |
+| Backup Files Managed Prevention Core Rule Group                                      | ❌        | ✅    | ✅      | ✅         |
+| HTTP Protocol Violation Managed Prevention Core Rule Group                           | ❌        | ✅    | ✅      | ✅         |
+| LLM Based Injection/AI Based Injection Prevention Core Rule Group                    | ❌        | ✅    | ✅      | ✅         |
+| Prompt Based Injection Prevention Core Rule Group                                    | ❌        | ✅    | ✅      | ✅         |
+| Credential Stuffing Prevention Core Rule Group                                       | ❌        | ✅    | ✅      | ✅         |
+| Malware and Virus Prevention Group Core Rule Group                                   | ❌        | ✅    | ✅      | ✅         |
+| API Abuse Prevention Core Rule Group                                                 | ❌        | ✅    | ✅      | ✅         |
+| Zero-Day Exploit Protection Core Rule Group                                          | ❌        | ✅    | ✅      | ✅         |
+| Device Fingerprinting Core Rule Group                                                | ❌        | ❌    | ✅      | ✅         |
+| Geolocation and IP Reputation Core Rule Group                                        | ❌        | ❌    | ✅      | ✅         |
+| Web Shell Detection Core Rule Group                                                  | ❌        | ❌    | ✅      | ✅         |
+| Content Security Group Core Rule Group                                               | ❌        | ❌    | ✅      | ✅         |
+| Phishing Prevention Core Rule Group                                                  | ❌        | ❌    | ✅      | ✅         |
+| Laravel PHP Framework Core Rule Group                                                | ❌        | ❌    | ✅      | ✅         |
+| Spring Boot Framework Core Rule Group                                                | ❌        | ❌    | ✅      | ✅         |
+| Wordpress Framework Core Rule Group                                                  | ❌        | ❌    | ✅      | ✅         |
+| Drupal Framework Core Rule Group                                                     | ❌        | ❌    | ✅      | ✅         |
+| Joomla Framework Core Rule Group                                                     | ❌        | ❌    | ✅      | ✅         |
+| Magento Framework Core Rule Group                                                    | ❌        | ❌    | ❌      | ✅         |
+| Express Node Framework Core Rule Group                                               | ❌        | ❌    | ❌      | ✅         |
+| Flask Python Framework Core Rule Group                                               | ❌        | ❌    | ❌      | ✅         |
+| SQL Injection Prevention Core Rule Group                                             | ❌        | ❌    | ❌      | ✅         |
+| XSS Injection Prevention Core Rule Group                                             | ❌        | ❌    | ❌      | ✅         |
+| Command Injection Prevention Core Rule Group                                         | ❌        | ❌    | ❌      | ✅         |
+| Open Redirect Prevention Core Rule Group                                             | ❌        | ❌    | ❌      | ✅         |
+| XXE Injection Prevention Core Rule Group                                             | ❌        | ❌    | ❌      | ✅         |
+| RFI-LFI Injection Prevention Core Rule Group                                         | ❌        | ❌    | ❌      | ✅         |
+| ASP.NET Language Prevention Core Rule Group                                          | ❌        | ❌    | ❌      | ✅         |
+| Known REST API Exploits Prevention Core Rule Group                                   | ❌        | ❌    | ❌      | ✅         |
+| Known GRAPHQL API Exploits Prevention Core Rule Group                                | ❌        | ❌    | ❌      | ✅         |
+| Spring MVC Prevention Core Rule Group                                                | ❌        | ❌    | ❌      | ✅         |
+| CakePHP Prevention Core Rule Group                                                   | ❌        | ❌    | ❌      | ✅         |
+| Kubernetes API Prevention Core Rule Group                                            | ❌        | ❌    | ❌      | ✅         |
+| Docker API Prevention Core Rule Group                                                | ❌        | ❌    | ❌      | ✅         |
+| AWS API’s Prevention Core Rule Group                                                 | ❌        | ❌    | ❌      | ✅         |
+| Azure API’s Prevention Core Rule Group                                               | ❌        | ❌    | ❌      | ✅         |
+| GCP API’s Prevention Core Rule Group                                                 | ❌        | ❌    | ❌      | ✅         |
+
 
 ## 🧩 Access Rights
 - <a href="https://zapisec.ai/pricing/" target="_blank">Basic Plan</a>
@@ -144,6 +199,6 @@ We are committed to creating a safe and welcoming space for everyone. Please rev
 
 ## 🌍 Join the Security Revolution
 
-Zapisec is more than a firewall — it's a security ecosystem for the modern web. This community is your gateway to mastering and shaping the future of web defense. Share feedback, suggest improvements, learn from others, and secure the internet — together.
+ZAPISEC is more than a firewall — it's a security ecosystem for the modern web. This community is your gateway to mastering and shaping the future of web defense. Share feedback, suggest improvements, learn from others, and secure the internet — together.
 
 ---
