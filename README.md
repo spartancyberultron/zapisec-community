@@ -6,51 +6,57 @@
 
 # 🔐 ZAPISEC: AI-Application Firewall & API Security Monitoring Platform
 
-Welcome to the official GitHub community for [ZAPISEC](https://zapisec.ai/) – a next-generation, SaaS-based Application Firewall (AF) and DNS Security Platform from **[Cyberultron Consulting Private Limited](https://cyberultron.com/)**. ZAPISEC empowers organizations with robust protection against modern cyber threats, offering:
-
-🛡️ Application Firewall(AI Based 7000+ Rules Based Detection)
-
-🌐 DDoS Mitigation (Layer 3, Layer 4, and Layer 7)
-
-🤖 Bot Protection
-
-📊 Anomaly Detection using AI
-
-Built for developers, DevSecOps, security engineers, and system administrators, ZAPISEC combines enterprise-grade security with community-driven innovation.
+[ZAPISEC](https://zapisec.ai/) is a next-generation, SaaS-based **Application Firewall (AF)** and **DNS Security Platform** developed by **[Cyberultron Consulting Private Limited](https://cyberultron.com/)**.  
+We empower organizations with cutting-edge protection against modern cyber threats through a unified, intelligent security solution.
 
 ---
 
-## 💡 About Zapisec
+## 🔥 What ZAPISEC Offers
 
-**ZAPISEC** is purpose-built to secure web applications, APIs, and DNS infrastructure against today’s most sophisticated threats. From the OWASP Top 10 vulnerabilities to malicious bot traffic, volumetric DDoS attacks, and AI-detected anomalies, ZAPISEC consolidates advanced security capabilities into a single, intuitive platform.
+| Feature                        | Description                                                                                      |
+|-------------------------------|--------------------------------------------------------------------------------------------------|
+| 🛡️ **Application Firewall**     | AI-powered with **7000+ rules** to detect and block injection attacks, XSS, zero-day exploits, and more.|
+| 🌐 **DDoS Mitigation**          | Comprehensive Layer 3, 4, and 7 protection using real-time traffic analysis, rate limiting, IP reputation, and geo-fencing. |
+| 🤖 **Bot Protection**           | Sophisticated bot fingerprinting & behavior analysis — allowing good bots while blocking scrapers, credential stuffers, and automation attacks. |
+| 📊 **Anomaly Detection**        | AI-driven engines that detect suspicious API usage, traffic anomalies, and emerging threats proactively. |
 
-**🔥 Key Security Modules:**
+---
 
-**Application Firewall:**
-Defend against injection attacks, XSS, and zero-day exploits with a customizable WAF that enforces strict rulesets and behavior-based anomaly detection.
+## 💡 About ZAPISEC
 
-**Bot Protection:**
-Identify and control both good and bad bots using advanced fingerprinting, behavioral analysis, and dynamic bot score-based actions. Allow search engine crawlers while blocking credential stuffers, scrapers, and automation scripts.
+**ZAPISEC** is designed to secure your web applications, APIs, and DNS infrastructure against today’s most sophisticated attacks, including:
 
-**DDoS Management:**
-Mitigate Layer 3, 4, and 7 distributed denial-of-service attacks with real-time traffic analysis, rate limiting, IP reputation intelligence, and geo-fencing.
+- OWASP Top 10 vulnerabilities  
+- Malicious bot traffic  
+- Volumetric and application-layer DDoS attacks  
+- AI-identified behavioral anomalies
 
-**Anomaly Detection:**
-Leverage AI-powered detection engines to identify unusual patterns, suspicious API usage, or traffic behavior anomalies—ensuring proactive threat mitigation.
+### Key Security Modules
 
-🧩 Control & Visibility
+#### Application Firewall
+Protect your infrastructure with customizable, behavior-based rulesets that adapt to evolving threats — blocking SQL injections, cross-site scripting, and unknown zero-day exploits.
 
-ZAPISEC gives your security team granular control over:
+#### Bot Protection
+Maintain control over automated traffic by differentiating between trusted crawlers (Google, Bing, etc.) and malicious bots with dynamic scoring and real-time mitigation.
 
-Firewall rule customization via intuitive rule builders
+#### DDoS Management
+Defend against large-scale attacks at all layers with granular traffic control, IP reputation insights, and geo-fencing to keep your services available and responsive.
 
-Real-time traffic visualization and spike alerts
+#### Anomaly Detection
+Harness AI to spot unusual patterns and suspicious API activity early — empowering your security team to act before threats escalate.
 
-Rate limiting, geo-blocking, and session control
+---
 
-API and DNS protection with protocol-aware defenses
+## 🧩 Control & Visibility
 
-With a central dashboard that integrates all features, ZAPISEC simplifies the management of complex security workflows—making enterprise-grade protection accessible and manageable.
+ZAPISEC offers your security teams complete command with:
+
+- **Intuitive Rule Builders** for granular firewall customization  
+- **Real-Time Traffic Dashboards** with spike alerts and detailed analytics  
+- **Rate Limiting, Geo-Blocking & Session Management**  
+- **Comprehensive API & DNS Protection** using protocol-aware defenses  
+
+All managed through a centralized, easy-to-use dashboard that streamlines complex security workflows — making enterprise-grade protection accessible to everyone.
 
 ---
 
