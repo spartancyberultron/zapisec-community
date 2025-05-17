@@ -139,17 +139,18 @@ Each rulebook is built on expert-curated rules derived from OWASP, MITRE ATT&CK,
 ---
 
 ### 🚦 3. Rate Limiting
-Control request volume per:
 
-- IP Address  
-- Geo-location  
-- Request Path  
-- User-Agent  
-- Authenticated Session
+| Control Mechanism          | Description                                            |
+| -------------------------- | ------------------------------------------------------ |
+| **IP Address**             | Control requests based on the user's IP address       |
+| **Geo-location**           | Control requests based on geographic location         |
+| **Request Path**           | Control requests based on the URL path                |
+| **User-Agent**             | Control requests based on the user agent (browser)    |
+| **Authenticated Session**  | Control requests based on the authenticated session  |
 
 **Actions triggered**: Throttle, Block, CAPTCHA, Redirect, Alert
 
-Use cases:
+#### Use cases:
 
 - Prevent brute-force login attacks
 - Deter API scraping or enumeration
@@ -159,14 +160,14 @@ Use cases:
 
 ## ⚙️ Embedded Rules Engine (7000+ Rules)
 
-At the core of the Application Firewall lies a **7000+ rules engine**, structured as:
-
-- **Core Rule Groups**
-- **Managed Rulebooks (48)**
-- **Heuristics and Behavior Analyzers**
-- **AI/LLM Prompt Analyzers**
-- **Bot Detection Heuristics**
-- **Malware and CVE Signature Matchers**
+| Rule Component                   | Description                                                  |
+| --------------------------------- | ------------------------------------------------------------ |
+| **Core Rule Groups**              | Pre-defined rule groups targeting common attack patterns     |
+| **Managed Rulebooks (48)**        | Managed sets of rules for various security concerns          |
+| **Heuristics and Behavior Analyzers** | Identify abnormal request patterns using heuristics          |
+| **AI/LLM Prompt Analyzers**       | AI-powered analysis of suspicious prompts and behaviors       |
+| **Bot Detection Heuristics**     | Detect bot-like behavior using advanced heuristics           |
+| **Malware and CVE Signature Matchers** | Detect known malware and vulnerabilities based on signatures |
 
 Each rule is scored, versioned, and has contextual metadata for:
 
@@ -179,8 +180,6 @@ Each rule is scored, versioned, and has contextual metadata for:
 > ✅ **Deploy as is** or fully **customize rules** for your specific industry (e.g., fintech, healthcare, e-commerce, SaaS).
 >  
 > 🚀 Built for **low-latency**, **high-throughput**, and **zero-trust environments**.
-
-
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./others/application_firewall.png">
@@ -220,23 +219,32 @@ Bad bots are blocked or challenged using behavior tracking (mouse movement, keyb
 | **Cloud Services (Abuse)** | Abuse from proxy networks like AWS, GCP, Azure        | Used to mask botnet origins or launch attacks at scale.                    |
 | **Human Routing Channels** | Residential proxy, mobile proxy, P2P botnets          | Bots routed via real users or infected devices to bypass IP blocks.        |
 
----
-
-### ⚙️ Detection Techniques
-
-- **Header validation** (User-Agent, Referer, Accept-Language)
-- **Behavioral fingerprinting** (mouse movement, click rhythm, scroll depth)
-- **Rate Limiting** and **Device Fingerprinting**
-- **CAPTCHA enforcement** for suspected automation
-- **Real-time IP Reputation** via Threat Intelligence feeds
-
----
 
 By deploying Bot Protection, you safeguard your application against **automated abuse**, **credential stuffing**, **data theft**, and **fake traffic**, while ensuring uninterrupted access to beneficial bots.
 
 
-### 3. 📈 Anomaly Detection
-- Real-time detection of traffic anomalies such as request spikes, pattern deviation, and behavioral oddities. The system analyzes root causes and tags anomalies for investigation.
+### 📈 Anomaly Detection
+
+| **Feature**                | **Description**                                                                                                                                       |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Real-time Detection**     | Monitors traffic for anomalies such as request spikes, pattern deviations, and behavioral oddities in real-time.                                      |
+| **How It Works**            | Utilizes advanced algorithms to continuously analyze data, detect trends, and identify deviations from established patterns.                          |
+| **Data Analysis**           | Statistical models and machine learning techniques are employed to evaluate data and define normal traffic patterns.                                   |
+| **Anomaly Identification**  | Flags any data point or behavior that deviates significantly from the established norm, potentially indicating errors, fraud, or unusual system behavior. |
+| **Custom Thresholds**       | Allows the configuration of specific thresholds to customize detection based on unique requirements, enhancing precision and reducing false positives. |
+| **Alerts and Insights**     | Instant alerts are triggered upon detecting an anomaly, along with detailed reports to aid in the investigation and resolution of the issue.             |
+| **Actionable Solutions**    | Provides insights for corrective actions, optimization, and prevention of potential risks or damages based on the detected anomaly.                   |
+
+### Anomaly Detection in ZAPISEC
+
+| **Component**               | **Details**                                                                                                                            |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| **Anomaly Detection Service** | Utilizes advanced algorithms for real-time monitoring and analysis of traffic data.                                                   |
+| **Continuous Monitoring**    | Data is continuously evaluated for normal behavior using statistical models and machine learning.                                      |
+| **Real-time Alerts**        | Anomalies trigger real-time alerts and detailed reports for investigation.                                                              |
+| **Customizable Thresholds** | Enables custom threshold settings for precise anomaly detection tailored to specific requirements.                                      |
+| **Actionable Insights**     | Anomalies are accompanied by actionable insights to help mitigate potential risks and optimize system processes.                         |
+
 
 ### 4. 🛡️ DDoS Protection
 - Defends against L3-L7 DDoS attacks using smart rule logic and filtering.
