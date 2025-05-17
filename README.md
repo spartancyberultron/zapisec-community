@@ -56,10 +56,131 @@ With a central dashboard that integrates all features, ZAPISEC simplifies the ma
 
 ## 🚀 Key Features
 
-### 1. 🔥 Application Firewall (WAF)
-- **Custom Rules**: Define and deploy domain-specific security rules using various attributes (IP, country, path, method, etc.).
-- **Managed Rules**: Predefined set of 48 WAF rules to block common attack vectors, with an option to extend and tailor to your needs.
-- **Rate Limiting**: Throttle incoming requests based on thresholds to mitigate brute-force, scraping, or abuse attempts per domain.
+# 🌐 Application Firewall
+
+The **Application Firewall** is designed to provide robust security for your web applications by filtering, monitoring, and blocking malicious HTTP/S traffic. It comes with an embedded engine of **7,000+ rules**, organized into **customizable**, **managed**, and **rate-limiting** components.
+
+## ✅ Core Components
+
+### 🔒 1. Custom Rules
+Define and enforce **domain-specific security logic** using:
+
+- **IP-based filtering** (whitelist/blacklist)
+- **Country-based access control**
+- **URL path matching**
+- **HTTP method restrictions (GET, POST, PUT, DELETE, etc.)**
+- **Custom headers validation**
+- **Regex-based payload inspection**
+- **Time-based access control**
+
+Create and update your rule sets dynamically based on threat intelligence and evolving business requirements.
+
+---
+
+### 📦 2. Managed Prevention Rules (48 Core Rule Books)
+Our managed ruleset includes **48 security rulebooks** addressing high-impact threats and compliance standards.
+
+Each rulebook is built on expert-curated rules derived from OWASP, MITRE ATT&CK, and industry intelligence. Examples include:
+
+| Rule Book Category                                       | Description                                                                 |
+|----------------------------------------------------------|-----------------------------------------------------------------------------|
+| SQL Injection Prevention                                 | Blocks classic and advanced SQLi payloads                                   |
+| Cross-site Scripting (XSS) Prevention                    | Detects reflective and stored XSS attacks                                  |
+| Remote Code Execution (RCE) Detection                    | Blocks system call and command injection patterns                          |
+| Directory Traversal Protection                           | Detects `../` style path traversal attempts                                |
+| Admin Path Protection                                    | Secures sensitive admin and backend paths                                  |
+| Authentication Bypass Protection                         | Prevents bypass of login/OTP endpoints                                     |
+| API Abuse Detection                                      | Limits endpoint flooding, fuzzing, and abuse                               |
+| Broken Access Control Rule Group                         | Detects unauthorized access patterns                                       |
+| HTTP Protocol Anomaly Detection                          | Flags malformed headers and uncommon request sequences                     |
+| Session Hijacking Detection                              | Identifies session token anomalies                                         |
+| Bot Behavior Detection                                   | Blocks non-human traffic patterns using heuristics                         |
+| Account Takeover (ATO) Prevention                        | Stops credential stuffing and password spraying                           |
+| LLM Injection & Prompt Injection Prevention              | Prevents LLM-specific prompt attacks and prompt leakage                    |
+| Payload Obfuscation Detection                            | Blocks base64, Unicode, hex-encoded malicious payloads                     |
+| File Upload Risk Detection                               | Validates MIME types, file extensions, and embedded scripts                |
+| Command Injection Detection                              | Detects `eval()`, `exec()`, `system()`, and shell command payloads         |
+| CSRF Protection                                          | Detects forged requests from unknown or unauthorized origins               |
+| CVE Signature Matching                                   | Monitors for known vulnerabilities via CVE rule patterns                   |
+| Web Shell Upload Prevention                              | Blocks web shell deployment attempts and backdoor installation             |
+| LFI/RFI Detection                                        | Flags local and remote file inclusion payloads                             |
+| SSRF Protection                                          | Detects server-side request forgery attempts                               |
+| NoSQL Injection Detection                                | Blocks MongoDB, Firebase, and other NoSQL attack vectors                   |
+| Business Logic Abuse Detection                           | Identifies coupon abuse, gift card fraud, etc.                             |
+| Rate Abuse & Pricing Manipulation                        | Detects high-frequency cart/checkout anomalies                            |
+| WebSocket Anomaly Detection                              | Scans WebSocket headers and message flows                                  |
+| HTTP Method Tampering                                    | Detects use of uncommon or deprecated methods                              |
+| XML External Entity (XXE) Detection                      | Detects external entity expansion attempts                                |
+| JSON Parser Abuse Detection                              | Blocks malicious input targeting JSON parsers                             |
+| URL Encoding Abuse Detection                             | Flags double or mixed encoding for evasion                                |
+| L7 DDoS Mitigation Core Rules                            | Blocks Layer 7 application-level DDoS attempts                             |
+| CDN Bypass Attempt Detection                             | Detects attempts to bypass reverse proxies/CDNs                           |
+| Reflected Parameter Echo Checks                          | Scans for input reflection in responses                                   |
+| IP Reputation Enforcement                                | Uses threat intelligence for malicious IP filtering                       |
+| Malware URL Pattern Blocking                             | Blocks outbound or inbound malware indicators                             |
+| Shadow API Detection                                     | Flags undocumented or deprecated endpoints                                |
+| Phishing Site Request Detection                          | Blocks requests resembling phishing site behaviors                        |
+| Broken Cryptography Detection                            | Scans for insecure crypto practices in responses                          |
+| Authentication Token Misuse Detection                    | Checks for token replay, theft, or injection                              |
+| Hidden Parameter Tampering                               | Detects and blocks tampering of hidden or internal form parameters        |
+| Application Fingerprinting Prevention                    | Blocks scanning tools and fingerprinting attempts                         |
+| Header Injection Detection                               | Detects CRLF injection and header manipulation                           |
+| HTTP Smuggling Detection                                 | Detects request splitting/smuggling patterns                             |
+| Response Behavior Anomaly Detection                      | Monitors deviation in normal HTTP response sizes and types               |
+| Content Spoofing Detection                               | Prevents HTML injection and content mismatch attempts                     |
+| Clickjacking Protection                                  | Enforces proper `X-Frame-Options` and behavior analysis                   |
+| OAuth/OpenID Misuse Detection                            | Detects misuse or abuse of auth endpoints                                 |
+| Browser Exploit Prevention                               | Blocks outdated browser versions and vulnerable UAs                      |
+| CSP Bypass & Inline Script Injection Detection           | Flags inline scripts and CSP violation attempts                           |
+| Honeypot Triggered Bot Detection                         | Uses decoy forms and fields to flag bots                                  |
+
+> 🔧 *These 48 rulebooks are continuously updated and tuned based on live telemetry, honeypot signals, and zero-day intelligence.*
+
+---
+
+### 🚦 3. Rate Limiting
+Control request volume per:
+
+- IP Address  
+- Geo-location  
+- Request Path  
+- User-Agent  
+- Authenticated Session
+
+**Actions triggered**: Throttle, Block, CAPTCHA, Redirect, Alert
+
+Use cases:
+
+- Prevent brute-force login attacks
+- Deter API scraping or enumeration
+- Stop rapid abuse of search/product listing
+
+---
+
+## ⚙️ Embedded Rules Engine (7000+ Rules)
+
+At the core of the Application Firewall lies a **7000+ rules engine**, structured as:
+
+- **Core Rule Groups**
+- **Managed Rulebooks (48)**
+- **Heuristics and Behavior Analyzers**
+- **AI/LLM Prompt Analyzers**
+- **Bot Detection Heuristics**
+- **Malware and CVE Signature Matchers**
+
+Each rule is scored, versioned, and has contextual metadata for:
+
+- Threat classification
+- False positive suppression
+- Tunable confidence thresholds
+
+---
+
+> ✅ **Deploy as is** or fully **customize rules** for your specific industry (e.g., fintech, healthcare, e-commerce, SaaS).
+>  
+> 🚀 Built for **low-latency**, **high-throughput**, and **zero-trust environments**.
+
+
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./others/application_firewall.png">
@@ -67,9 +188,52 @@ With a central dashboard that integrates all features, ZAPISEC simplifies the ma
   <img src="./others/application_firewall.png" width="100%">
 </picture>
 
-### 2. 🤖 Bot Protection
-- **Good Bots**: Automatically allows verified bots from search engines (Google, Bing), social networks (X, Facebook), and cloud providers (AWS, Azure).
-- **Bad Bots**: Detects and blocks harmful bots like content scrapers, credential stuffers, botnets, and impersonators using behavioral and signature-based techniques.
+## 🤖 Bot Protection
+
+Bot Protection is a critical security layer designed to distinguish between **good bots** (legitimate, helpful bots) and **bad bots** (malicious or abusive agents). This feature uses **behavioral analysis**, **signature-based detection**, **rate-limiting**, and **challenge-based validation** to control automated access.
+
+---
+
+### ✅ Good Bots
+
+These are bots from trusted sources that are automatically allowed based on user-agent verification, IP reputation, and reverse DNS lookups:
+
+| Category         | Verified Bots                                     | Description                                                                 |
+|------------------|---------------------------------------------------|-----------------------------------------------------------------------------|
+| **Search Engines** | Googlebot, Bingbot, Yahoo Slurp, DuckDuckBot, YandexBot, BaiduSpider | Official crawlers indexing content for search visibility and ranking.       |
+| **Social Networks** | Facebook External Hit, Twitterbot, LinkedInBot   | Bots used to generate link previews and rich media embeds for shared URLs. |
+| **Cloud Services** | AWS Health Check, Azure Monitor, GCP AppEngine   | Cloud service bots used for uptime monitoring, diagnostics, or syncs.      |
+
+---
+
+### 🚫 Bad Bots
+
+Bad bots are blocked or challenged using behavior tracking (mouse movement, keyboard emulation), header validation, IP fingerprinting, and known bot signatures.
+
+| Type                        | Examples / Indicators                                 | Description                                                                 |
+|-----------------------------|-------------------------------------------------------|-----------------------------------------------------------------------------|
+| **Security Violators**     | SQLi scanners, XSS payloads, path fuzzers             | Attempt to exploit vulnerabilities through automated requests.             |
+| **Content Scrapers**       | HTTrack, Scrapy, Python-urllib, curl, wget            | Try to copy entire site content or competitive intelligence.               |
+| **Bot Emulating Humans**   | Headless Chrome, Puppeteer, Selenium, PhantomJS       | Mimic user behavior using automation to bypass detection.                  |
+| **Social Networks (Fake)** | Fake engagement bots on X, Instagram, or Reddit       | Post spam, inflate engagement, or distribute misinformation.               |
+| **Suspicious Behavior**    | Irregular intervals, rapid clicks, non-human patterns | Fails browser challenges or exhibits erratic navigational paths.           |
+| **Cloud Services (Abuse)** | Abuse from proxy networks like AWS, GCP, Azure        | Used to mask botnet origins or launch attacks at scale.                    |
+| **Human Routing Channels** | Residential proxy, mobile proxy, P2P botnets          | Bots routed via real users or infected devices to bypass IP blocks.        |
+
+---
+
+### ⚙️ Detection Techniques
+
+- **Header validation** (User-Agent, Referer, Accept-Language)
+- **Behavioral fingerprinting** (mouse movement, click rhythm, scroll depth)
+- **Rate Limiting** and **Device Fingerprinting**
+- **CAPTCHA enforcement** for suspected automation
+- **Real-time IP Reputation** via Threat Intelligence feeds
+
+---
+
+By deploying Bot Protection, you safeguard your application against **automated abuse**, **credential stuffing**, **data theft**, and **fake traffic**, while ensuring uninterrupted access to beneficial bots.
+
 
 ### 3. 📈 Anomaly Detection
 - Real-time detection of traffic anomalies such as request spikes, pattern deviation, and behavioral oddities. The system analyzes root causes and tags anomalies for investigation.
@@ -151,6 +315,17 @@ Below is a comprehensive comparison of feature availability across different ZAP
 | AWS API’s Prevention Core Rule Group                                                 | ❌        | ❌    | ❌      | ✅         |
 | Azure API’s Prevention Core Rule Group                                               | ❌        | ❌    | ❌      | ✅         |
 | GCP API’s Prevention Core Rule Group                                                 | ❌        | ❌    | ❌      | ✅         |
+
+# Application Firewall Rules & Features
+
+This table provides an overview of the features available in different editions of the Application Firewall. The tick marks (✅) indicate availability, while the cross marks (❌) indicate features not available in that edition.
+
+| Feature                                               | Community Edition | Basic Edition | Premium Edition | Enterprise Edition |
+|-------------------------------------------------------|-------------------|---------------|-----------------|---------------------|
+| **Application Firewall**                              | ✅                | ✅            | ✅              | ✅                  |
+| **Bot Protection**                                     | ❌                 | ❌             | ✅              | ✅                  |
+| **DDoS Mitigation**                                    | ❌                | ❌             | ✅              | ✅                  |
+| **Anomaly Detection**                                  | ❌                | ❌            | ❌               | ✅                  |
 
 
 ## 🧩 Access Rights
