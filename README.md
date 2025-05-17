@@ -246,7 +246,7 @@ By deploying Bot Protection, you safeguard your application against **automated 
 | **Actionable Insights**     | Anomalies are accompanied by actionable insights to help mitigate potential risks and optimize system processes.                         |
 
 
-### 4. 🛡️ DDoS Protection
+### 🛡️ DDoS Protection
 
 Defends against L3-L7 DDoS attacks using smart rule logic and filtering.
 
@@ -265,9 +265,17 @@ Defends against L3-L7 DDoS attacks using smart rule logic and filtering.
 | **Layer 7 (Application)**| HTTP Request Rate, Failed Authentication, Response Time (Latency), Error Rate (SXX HTTP Responses), Bot vs Human Traffic Distribution, DNS Query Rate |
 
 
-### 5. 🌐 DNS Management
-- DNS configuration, record management, and propagation monitoring all in one panel.
-- Seamless integration with firewall rules for unified security management.
+## 🌐 DNS Management
+
+DNS configuration, record management, and propagation monitoring.  
+Seamless integration with firewall rules for unified security management.
+
+| Feature                      | Description                                        |
+|------------------------------|--------------------------------------------------|
+| DNS Records Management        | Manage DNS records efficiently and securely.     |
+| NameServers Management        | Configure and monitor authoritative name servers.|
+| SSL Encryption               | Enable SSL certificates for secure DNS queries.  |
+| CDN Automation from Backend  | Automate Content Delivery Network integration and updates. |
 
 ---
 
