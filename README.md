@@ -6,7 +6,7 @@
 
 # 🔐 ZAPISEC: AI-Application Firewall & API Security Monitoring Platform
 
-Welcome to the official GitHub community for ZAPISEC – a next-generation, SaaS-based Web Application Firewall (WAF) and DNS Security Platform from **Cyberultron Consulting Private Limited**. ZAPISEC empowers organizations with robust protection against modern cyber threats, offering:
+Welcome to the official GitHub community for [ZAPISEC](https://zapisec.ai/) – a next-generation, SaaS-based Application Firewall (AF) and DNS Security Platform from **[Cyberultron Consulting Private Limited](https://cyberultron.com/)**. ZAPISEC empowers organizations with robust protection against modern cyber threats, offering:
 
 🛡️ Application Firewall(AI Based 7000+ Rules Based Detection)
 
