@@ -247,13 +247,23 @@ By deploying Bot Protection, you safeguard your application against **automated 
 
 
 ### 4. 🛡️ DDoS Protection
-- Defends against L3-L7 DDoS attacks using smart rule logic and filtering.
-- Block or challenge requests based on:
-  - IP Address or Range
-  - Geographic Location (Country)
-  - ASN (Autonomous System Number)
-  - HTTP Method, Path, Host
-  - Headers, Cookies, and User Agent
+
+Defends against L3-L7 DDoS attacks using smart rule logic and filtering.
+
+| **Block or Challenge Based On**               | **Details**                           |
+|-----------------------------------------------|-------------------------------------|
+| IP Address or Range                            | Blocks or challenges by IP or IP range |
+| Geographic Location (Country)                  | Blocks or challenges by country     |
+| ASN (Autonomous System Number)                 | Blocks or challenges by ASN          |
+| HTTP Method, Path, Host                        | Blocks or challenges by HTTP method, path, or host |
+| Headers, Cookies, and User Agent               | Blocks or challenges by headers, cookies, or user agent |
+
+| **Layer**            | **Metrics**                                                                                              |
+|----------------------|---------------------------------------------------------------------------------------------------------|
+| **Layer 3 (Network)**| Packets Per Second (PPS), Bits Per Second (BPS), ICMP Request Rate (Active Session), IP Fragmentation Rate, Source IP Entropy |
+| **Layer 4 (Transport)**| SYN Packet Rate, UDP Packet Rate, Connection Request Rate (Active Session), Retransmission Rate, Port Distribution |
+| **Layer 7 (Application)**| HTTP Request Rate, Failed Authentication, Response Time (Latency), Error Rate (SXX HTTP Responses), Bot vs Human Traffic Distribution, DNS Query Rate |
+
 
 ### 5. 🌐 DNS Management
 - DNS configuration, record management, and propagation monitoring all in one panel.
