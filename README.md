@@ -352,24 +352,13 @@ Below is a comprehensive comparison of feature availability across different ZAP
 
 This table provides an overview of the features available in different editions of the Application Firewall. The tick marks (✅) indicate availability, while the cross marks (❌) indicate features not available in that edition.
 
-| Feature                                               | Community Edition | Basic Edition | Premium Edition | Enterprise Edition |
+| Feature                                               | <a href="https://github.com/spartancyberultron/zapisec-community/" target="_blank">Community Edition</a> | <a href="https://zapisec.ai/pricing/" target="_blank">Basic Edition</a> | <a href="https://zapisec.ai/pricing/" target="_blank">Premium Plan</a> | <a href="https://zapisec.ai/pricing/" target="_blank">Enterprise Edition</a> |
 |-------------------------------------------------------|-------------------|---------------|-----------------|---------------------|
 | **Application Firewall**                              | ✅                | ✅            | ✅              | ✅                  |
 | **Bot Protection**                                     | ❌                 | ❌             | ✅              | ✅                  |
 | **DDoS Mitigation**                                    | ❌                | ❌             | ✅              | ✅                  |
 | **Anomaly Detection**                                  | ❌                | ❌            | ❌               | ✅                  |
 
-
-## 🧩 Access Rights
-- <a href="https://zapisec.ai/pricing/" target="_blank">Basic Plan</a>
-  - Only application firewall access with limited manaed rules. 
-- <a href="https://zapisec.ai/pricing/" target="_blank">Premium Plan</a>
-  - Application firewall access. 
-  - Bot protection access
-- <a href="https://zapisec.ai/pricing/" target="_blank">Enterprise Plan</a>
-  - Full access of all features under the security. 
-
----
 
 ## 📚 Docs & Resources
 
