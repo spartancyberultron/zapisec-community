@@ -362,6 +362,12 @@ This table provides an overview of the features available in different editions 
 | **DDoS Mitigation**                                    | ❌                | ❌             | ✅              | ✅                  |
 | **Anomaly Detection**                                  | ❌                | ❌            | ❌               | ✅                  |
 
+## Application Firewall Architecture
+
+| Application Firewall Architecture | Anomaly Detection Architecture | DDOS Agent Architecture | BOT Agent Architecture |
+|:----------------------------------:|:------------------------------:|:------------------------:|:-----------------------:|
+| ![Application Firewall](https://github.com/spartancyberultron/zapisec-community/blob/main/docs/Application-Firewall-Architecture.jpg) | ![Anomaly Detection](https://github.com/spartancyberultron/zapisec-community/blob/main/docs/Anomaly-Detection-Architecture.jpg) | ![DDOS Agent](https://github.com/spartancyberultron/zapisec-community/blob/main/docs/DDOS-Agent-Architecture.png) | ![BOT Agent](https://github.com/spartancyberultron/zapisec-community/blob/main/docs/BOT-Agent-Architecture.png) |
+
 
 ## 📚 Docs & Resources
 
